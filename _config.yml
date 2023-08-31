@@ -20,7 +20,7 @@ title                    : "기록용"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Shin Juyeon"
-description              : "An amazing website."
+description              : "공사중!"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Shin Juyeon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "doing!"
+  bio              : "공사중!"
   location         : "Somewhere"
   email            :
   links:
@@ -276,6 +276,21 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  KT_DX:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -286,15 +301,32 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: True 
       comments: # true
       share: true
       related: true
 
-  # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  # _KT_DX                      : 해당 하단 영역이 새로 추가되었습니다.
   - scope:
-      path: "_pages"
-      type: pages
+      path: "" #"_pages"
+      type: KT_DX
     values:
       layout: single
       author_profile: true
+      read_time: false
+      show_date: True 
+      share: true
+      sidebar: 
+        nav: "KT_DX"
+
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      show_date: True 
+      share: true
