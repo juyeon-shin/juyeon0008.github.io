@@ -1,7 +1,7 @@
 ---
 title : '00.Intro' #"KT_AIVLE_SCHOOL_DX: 00.Intro"
 permalink: /KT_DX/00.Intro/
-excerpt : "KT_AIVLE_SCHOOL DX과정 지원 및 입교 준비"
+excerpt : "DX 과정 지원 및 입교 준비"
 # categories : "KT_AIVLE_SCHOOL"
 # tag : #"github.io"
 date : '2023-08-28'
@@ -23,6 +23,10 @@ aivle school 4기 모집을 시작한다는 소식을 듣고 지원서 작성을
 
 ### 인적성 준비
 서류 합격 이후 인적성을 준비했다. 나는 DX를 지원해서 코딩테스트는 보지 않았다.  
+
+<center><img src="https://github.com/juyeon-shin/juyeon0008.github.io/assets/96481852/fa374e25-0e74-4795-9db0-eed388976225"width="50%" height="50%"></center>
+
+
 인적성을 열심히 준비하려고 KT 인적성 책도 샀다! 다만 한 번도 펼쳐보지 않았을 뿐... 공모전 준비와 알바에 치여살다보니 인적성 준비를 거의 못했다. 책에 있는 언어, 수리, 도형 부분의 팀을 열심히 읽고 문제를 2-3개씩 풀었다. 하면서도 반 포기 상태였다. 그래도 해봐야지.   
 
 언어는 나쁘지 않았다! 수학은 나빴다. 도형은 생각보다 괜찮았다! 의외로 도형에 재능이 있을 수도? 결과는 크게 기대하지 않았지만, 도형 문제가 재미있어서 좋은 기억으로 남았었다. 
