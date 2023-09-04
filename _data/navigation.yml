@@ -1,13 +1,13 @@
 # main links
 main:
-  - title: "About"
-    url: /About/
+  # - title: "About"
+  #   url: /About/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "KT_DX"
-    url: /KT_DX/
+  # - title: "KT_DX"
+  #   url: /KT_DX/
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
@@ -22,11 +22,11 @@ KT_DX:
   - title: "01. 데이터 다루기"
     url: /KT_DX/01.데이터 다루기/
     children:
-      - title: "01-1. 자료형"
-        url: /KT_DX/01.1.자료형/
-      - title: "01-2. 시퀀스 자료형"
-        url: /01.2.시퀀스자료형/
-      - title: "01-3. 제어문"
+      - title: "01_1. 자료형"
+        url: /KT_DX/01_1.자료형/
+      - title: "01_2. 시퀀스 자료형"
+        url: /KT_DX/01_2.시퀀스자료형/
+      - title: "01_3. 제어문"
         # url: /KT_DX/00.Intro/
       - title: "01-4. 함수"
         # url: /KT_DX/00.Intro/
