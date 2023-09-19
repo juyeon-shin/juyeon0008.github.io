@@ -330,3 +330,16 @@ defaults:
       read_time: false
       show_date: True 
       share: true
+
+  # PROGRAMMERS                      : 해당 하단 영역이 새로 추가되었습니다.
+  - scope:
+      path: "" #"_pages"
+      type: PROGRAMMERS
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      show_date: True 
+      share: true
+      sidebar: 
+        nav: "PROGRAMMERS"
