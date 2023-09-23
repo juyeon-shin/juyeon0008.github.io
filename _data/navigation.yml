@@ -4,8 +4,8 @@ main:
   #   url: /About/
   # - title: "Sample Posts"
   #   url: /year-archive/
-  - title: "PROGRAMMERS"
-    url: /PROGRAMMERS/
+  # - title: "PROGRAMMERS"
+  #   url: /PROGRAMMERS/
   # - title: "KT_DX"
   #   url: /KT_DX/
   - title: "Quick-Start Guide"

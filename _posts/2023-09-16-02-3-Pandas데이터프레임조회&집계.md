@@ -30,6 +30,47 @@ toc_sticky : True
 
 <p></p>
 
+
+```python
+import pandas as pd
+
+path = 'https://raw.githubusercontent.com/juyeon-shin/ALL_STUDY/main/2023_KT_AIVLE_SCHOOL/02.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%8B%A4%EB%93%AC%EA%B8%B0/Python02/tip2.csv?token=GHSAT0AAAAAACGPM4VOUO6CG43D66XMJ3WWZIJAC4A'
+data = pd.read_csv(path)
+
+display(data['tip'])
+display(data.loc[:,'tip'])
+```
+
+
+    0      1.01
+    1      1.66
+    2      3.50
+    3      3.31
+    4      3.61
+           ... 
+    239    5.92
+    240    2.00
+    241    2.00
+    242    1.75
+    243    3.00
+    Name: tip, Length: 244, dtype: float64
+
+
+
+    0      1.01
+    1      1.66
+    2      3.50
+    3      3.31
+    4      3.61
+           ... 
+    239    5.92
+    240    2.00
+    241    2.00
+    242    1.75
+    243    3.00
+    Name: tip, Length: 244, dtype: float64
+
+
 ## 02. 데이터프레임 그룹화
 
 - 연속형 변수 : 합, 평균, 최댓값, 최솟값
@@ -45,7 +86,62 @@ toc_sticky : True
 
 <p></p>
 
- 
+
+
+```python
+df_gr = data.groupby(by='day',as_index=False)[['tip']].sum()
+display(df_gr)
+```
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>day</th>
+      <th>tip</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Fri</td>
+      <td>51.96</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sat</td>
+      <td>260.40</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Sun</td>
+      <td>247.39</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Thur</td>
+      <td>171.83</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 ### + 시각화
 import matplotlib.pyplot as plt    
 %config InlineBackend.figure_format='retina' 
@@ -78,5 +174,21 @@ import matplotlib.pyplot as plt
 | plt.hist( <br>&emsp; bins, <br>&emsp; alpha, <br>&emsp; edgecolor) | 히스토그램 차트 <br>&emsp; 묶음 개수 <br>&emsp; 투명도 <br>&emsp; 테두리 색 | 연속형 값의 분포 확인 |
 
 <p></p>
+
+
+
+
+
+```python
+import matplotlib.pyplot as plt
+%config InlineBackend.figure_format='retina' #그래프 선명하게
+plt.figure(figsize=(8,5))
+plt.bar(x=df_gr['day'],height=df_gr['tip'])
+plt.title('tip by day')
+plt.axhline(df_gr['tip'].mean(), color='r')
+```
+<p></p>
+
+![img](https://github-production-user-asset-6210df.s3.amazonaws.com/96481852/268819140-06d0da19-4fc4-4890-9bb3-6920f87b6d9e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230919%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230919T021728Z&X-Amz-Expires=300&X-Amz-Signature=333d43db76a573ff7e105586666b068ab705bdcd837a86ed2aed2b16911a46b0&X-Amz-SignedHeaders=host&actor_id=96481852&key_id=0&repo_id=571574187) 
 
 
