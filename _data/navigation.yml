@@ -2,8 +2,10 @@
 main:
   # - title: "About"
   #   url: /About/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tag/
   # - title: "PROGRAMMERS"
   #   url: /PROGRAMMERS/
   # - title: "KT_DX"
@@ -12,44 +14,48 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 # documentation links
-KT_DX:
-  - title: "KT AIVLE SCHOOL : DX"
-    url: /KT_DX/
+# KT_DX:
+#   - title: "KT AIVLE SCHOOL : DX"
+#     url: /KT_DX/
 
-  - title: "00. Intro"
-    url: /KT_DX/00.Intro/
+#   - title: "00. Intro"
+#     url: /KT_DX/00.Intro/
 
-  - title: "01. 데이터 다루기"
-    url: /KT_DX/01.데이터 다루기/
-    children:
-      - title: "01_1. 자료형"
-        url: /KT_DX/01_1.자료형/
-      - title: "01_2. 시퀀스 자료형"
-        url: /KT_DX/01_2.시퀀스자료형/
-      - title: "01_3. 제어문"
-        # url: /KT_DX/00.Intro/
-      - title: "01-4. 함수"
-        # url: /KT_DX/00.Intro/
-      - title: "01-5. 정규표현식"
-        # url: /KT_DX/00.Intro/
-      - title: "01-6. 파일 읽고 쓰기"
-        # url: /KT_DX/00.Intro/
-      - title: "01-7. 엑셀 파일 다루기"
-        # url: /KT_DX/00.Intro/
-      - title: "01-8. 이메일 보내기"
-        # url: /KT_DX/00.Intro/
+#   - title: "01. 데이터 다루기"
+#     url: /KT_DX/01.데이터 다루기/
+#     children:
+#       - title: "01_1. 자료형"
+#         url: /KT_DX/01_1.자료형/
+#       - title: "01_2. 시퀀스 자료형"
+#         url: /KT_DX/01_2.시퀀스자료형/
+#       - title: "01_3. 제어문"
+#         # url: /KT_DX/00.Intro/
+#       - title: "01-4. 함수"
+#         # url: /KT_DX/00.Intro/
+#       - title: "01-5. 정규표현식"
+#         # url: /KT_DX/00.Intro/
+#       - title: "01-6. 파일 읽고 쓰기"
+#         # url: /KT_DX/00.Intro/
+#       - title: "01-7. 엑셀 파일 다루기"
+#         # url: /KT_DX/00.Intro/
+#       - title: "01-8. 이메일 보내기"
+#         # url: /KT_DX/00.Intro/
+
+  # - title: "02. 데이터 다듬기"
+  #   url: /KT_DX/
+  #   children:
+  #     #- title: "01-1.데이터 다루기"
+  #       # url: /KT_DX/00.Intro/
+
+  # - title: "03. 데이터 분석"
+  #   url: /KT_DX/
+  #   children:
+  #     #- title: "01-1.데이터 다루기"
+  #       # url: /KT_DX/00.Intro/
 
 
-
-
-  - title: "02. 데이터 다듬기"
-    url: /KT_DX/
-    children:
-      #- title: "01-1.데이터 다루기"
-        # url: /KT_DX/00.Intro/
-
-  - title: "03. 데이터 분석"
-    url: /KT_DX/
-    children:
-      #- title: "01-1.데이터 다루기"
-        # url: /KT_DX/00.Intro/
+  counts:
+  - title : '카테고리'
+    use : True
+  - title : '태그'
+    use : True
