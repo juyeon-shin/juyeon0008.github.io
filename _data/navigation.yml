@@ -54,9 +54,9 @@ main:
   #       # url: /KT_DX/00.Intro/
 
 
-  counts:
-    - title : '카테고리'
-      use : True
+  # counts:
+  #   - title : '카테고리'
+  #     use : True
     
-    - title : '태그'
-      use : True
+  #   - title : '태그'
+  #     use : True
