@@ -6,6 +6,7 @@ collection: KT_DX
 entries_layout: grid
 classes: wide
 author_profile: True
+use_math: True
 # sidebar: 
 #     navs: KT_DX
 ---
